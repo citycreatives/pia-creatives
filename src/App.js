@@ -30,7 +30,7 @@ class App extends Component {
             <p>We are a guild of creatives from different companies, industries, and teams in Peoria, IL.</p>
           </div>
           <div className="hero-illustration">
-            <img src="https://images.typeform.com/images/NyPyAGkia9F4/image/default#.gif" />
+            <img src="https://images.typeform.com/images/NyPyAGkia9F4/image/default#.gif" alt="Art" />
           </div>
         </div>
 
