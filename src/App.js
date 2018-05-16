@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './Logo.js';
 import Member from './Member.js';
+import Weather from './Weather.js';
 import './App.css';
 
 class App extends Component {
@@ -17,11 +18,13 @@ class App extends Component {
       ]
     }
   }
+
   render() {
     return (
       <div className="content">
         <header>
           <Logo />
+          <Weather />
         </header>
 
         <div className="hero">
