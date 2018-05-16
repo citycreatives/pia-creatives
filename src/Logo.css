@@ -1,0 +1,11 @@
+.logo {
+  display: inline-block;
+  background-color: #4052FF;
+  padding: 0.75rem;
+  color: white;
+  user-select: none;
+}
+
+.logo .city {
+  font-weight: bold;
+}
