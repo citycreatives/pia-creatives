@@ -1,0 +1,446 @@
+@charset "UTF-8";
+@use postcss-cssnext;
+.universe {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: show;
+  height: 100%;
+  min-height: 400px;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+}
+.universe__part:nth-child(1) {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.universe__part:nth-child(1) .universe__planet {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  height: 200px;
+  width: 400px;
+  border-radius: 12px 12px 200px 200px;
+  background: linear-gradient(180deg, #38E6A1 22%, #E2DDE3 23%, #E2DDE3 47%, #BBB7BC 48%, #BBB7BC 57%, #5D3C1F 58%);
+}
+.universe__part:nth-child(1) .universe__planet:before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 15px;
+  height: 75px;
+  width: 150px;
+  border-radius: 90px 90px 0 0;
+  background: #E2DDE3;
+}
+.universe__part:nth-child(1) .universe__planet:after {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: 160px;
+  width: 180px;
+  height: 100px;
+  border-radius: 0 0 100px 100px;
+  background: #E2DDE3;
+}
+.universe__part:nth-child(1) .universe__hills {
+  position: absolute;
+  top: 80px;
+  left: 280px;
+  height: 120px;
+  width: 100px;
+  border-radius: 50px 50px 0 0;
+  background: #0EA167;
+}
+.universe__part:nth-child(1) .universe__hills:before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  height: 80px;
+  width: 100px;
+  border-radius: 50px 50px 0 0;
+  background: #1AC883;
+  box-shadow: 4px 0 0 rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.universe__part:nth-child(1) .universe__hills:after {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 80px;
+  height: 50px;
+  width: 100px;
+  border-radius: 50px 50px 0 0;
+  background: #38E6A1;
+  z-index: 10;
+}
+.universe__part:nth-child(1) .universe__bubble:nth-child(1) {
+  position: absolute;
+  top: 182px;
+  left: 35px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background: #737979;
+  animation: universe-star 3s ease infinite;
+}
+.universe__part:nth-child(1) .universe__bubble:nth-child(2) {
+  position: absolute;
+  top: 155px;
+  left: 75px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: #737979;
+  animation: universe-star 5s ease infinite;
+  animation-delay: -2s;
+}
+.universe__part:nth-child(1) .universe__bubble:nth-child(3) {
+  position: absolute;
+  top: 175px;
+  left: 170px;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  background: #737979;
+  animation: universe-star 3s ease infinite;
+  animation-delay: -1s;
+}
+.universe__part:nth-child(1) .universe__bubble:nth-child(4) {
+  position: absolute;
+  top: 160px;
+  left: 160px;
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  background: #737979;
+  animation: universe-star 5s ease infinite;
+}
+.universe__part:nth-child(1) .universe__bubble:nth-child(5) {
+  position: absolute;
+  top: 169px;
+  left: 220px;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background: #737979;
+  animation: universe-star 4s ease infinite;
+  animation-delay: -2s;
+}
+.universe__part:nth-child(1) .universe__bubble:nth-child(6) {
+  position: absolute;
+  top: 165px;
+  left: 67px;
+  height: 38px;
+  width: 38px;
+  border-radius: 100%;
+  background: #737979;
+  animation: universe-star 5s ease infinite;
+  animation-delay: -1s;
+}
+.universe__part:nth-child(1) .universe__rocket {
+  position: absolute;
+  top: 45px;
+  left: 110px;
+  height: 30px;
+  width: 88px;
+  border-radius: 50% 50% 4px 4px / 100% 100% 2px 2px;
+  background: #4051FF;
+  animation: universe-rocket 4s ease infinite;
+}
+.universe__part:nth-child(1) .universe__rocket:before {
+  content: '';
+  position: absolute;
+  top: -46px;
+  left: 14px;
+  height: 80px;
+  width: 59px;
+  border-radius: 50% 50% 2px 2px / 100% 100% 2px 2px;
+  background: linear-gradient(to right, #F3F4FE 49%, #E4E7FE 50%);
+}
+.universe__part:nth-child(1) .universe__rocket:after {
+  content: '';
+  position: absolute;
+  top: 34px;
+  left: 26px;
+  height: 10px;
+  width: 36px;
+  border-radius: 5px;
+  background: #4051FF;
+}
+.universe__part:nth-child(1) .universe__rocket-window {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  height: 18px;
+  width: 18px;
+  border-radius: 100%;
+  background: black;
+  border: 4px solid #4051FF;
+}
+.universe__part:nth-child(1) .universe__rocket-light {
+  position: absolute;
+  top: 45px;
+  left: 33px;
+  height: 80px;
+  width: 20px;
+  background: linear-gradient(to bottom, rgba(115, 121, 121, 0) 0%, #737979 100%);
+}
+.universe__part:nth-child(1) .universe__satellite1 {
+  position: absolute;
+  top: -60px;
+  left: 240px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #efa81c 0%, rgba(250, 1, 109, 0.2) 100%);
+  animation: universe-sun 6s linear infinite;
+}
+.universe__part:nth-child(1) .universe__satellite2 {
+  position: absolute;
+  top: 365px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #bebebe 25%, #d7d7d7 45%, gainsboro 84%);
+  animation: universe-sat 4s ease infinite;
+}
+.universe__part:nth-child(1) .universe__satellite2:after {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 18px;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+.universe__part:nth-child(1) .universe__satellite2:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.universe__part:nth-child(1) .universe__star:nth-child(11) {
+  position: absolute;
+  top: 80px;
+  left: 66px;
+  height: 3px;
+  width: 3px;
+  animation: universe-star 6s linear infinite;
+  animation-delay: -2s;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(11):before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(11):after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  height: 100%;
+  width: 1px;
+  border-radius: 1px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(12) {
+  position: absolute;
+  top: 69px;
+  left: 83px;
+  height: 8px;
+  width: 8px;
+  animation: universe-star 6s linear infinite;
+  animation-delay: -3s;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(12):before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background: #FFFFFF;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(12):after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  height: 100%;
+  width: 2px;
+  border-radius: 2px;
+  background: #FFFFFF;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(13) {
+  position: absolute;
+  top: 91px;
+  left: 73px;
+  height: 3px;
+  width: 3px;
+  animation: universe-star 6s linear infinite;
+  animation-delay: -4s;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(13):before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(13):after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  height: 100%;
+  width: 1px;
+  border-radius: 1px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(14) {
+  position: absolute;
+  top: 78px;
+  left: 119px;
+  height: 6px;
+  width: 6px;
+  animation: universe-star 6s linear infinite;
+  animation-delay: -5s;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(14):before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(14):after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  height: 100%;
+  width: 2px;
+  border-radius: 2px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(15) {
+  position: absolute;
+  top: 76px;
+  left: 195px;
+  height: 3px;
+  width: 3px;
+  animation: universe-star 6s linear infinite;
+  animation-delay: -1s;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(15):before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  background: #2D97F5;
+}
+.universe__part:nth-child(1) .universe__star:nth-child(15):after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  height: 100%;
+  width: 1px;
+  border-radius: 1px;
+  background: #2D97F5;
+}
+
+/* Анимации */
+@keyframes universe-ufo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes universe-rocket {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes universe-sat {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes universe-ufo-light {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes universe-star {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes universe-sun {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

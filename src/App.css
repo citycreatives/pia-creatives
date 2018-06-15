@@ -18,15 +18,35 @@ header {
 }
 
 .hero-content {
-  max-width: 800px;
+  flex: 1;
   align-self: center;
 }
 
 .hero-illustration {
   flex: 1;
   align-self: center;
-  filter: grayscale();
-  opacity: 0.5;
+
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  background: blue;
+}
+
+.c1 {
+  width: 300px;
+  height: 300px;
+}
+
+.c2 {
+  width: 40px;
+  height: 40px;
+}
+
+.c3 {
+  width: 100px;
+  height: 100px;
 }
 
 h1 {
