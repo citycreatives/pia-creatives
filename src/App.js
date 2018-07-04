@@ -14,7 +14,11 @@ class App extends Component {
         { name: "Brandon D'Adam" },
         { name: "Jared Rauh" },
         { name: "Parker Roth" },
-        { name: "Nicklaus Hernan" }
+        { name: "Nicklaus Hernan" },
+        { name: "Matt Blick" },
+        { name: "Kayla Phillips" },
+        { name: "David Nielsen" },
+        { name: "Chad DeWeese" },
       ]
     }
   }
@@ -29,7 +33,7 @@ class App extends Component {
 
         <div className="hero">
           <div className="hero-content">
-            <h1>Discuss, share, and think.</h1>
+            <h1>Discuss, share, and imagine.</h1>
             <p>We are a guild of creatives from different companies, industries, and teams in Peoria, IL.</p>
             <a href="https://chandlerroth.typeform.com/to/bfG7L5" className="button">Join the Guild</a>
           </div>
@@ -38,11 +42,24 @@ class App extends Component {
           </div>
         </div>
 
-        <h1>{this.state.members.length} Guild Members</h1>
-        <div className="members">
-          {this.state.members.map((member, index) => <Member key={index} name={member.name} />)}
-        </div>
+        <section>
+          <div className="craftsmanship">
+            <h1>We belive in Craftsmanship.</h1>
+            <p>Craftsmanship is a personal commitment held by each guild member, striving for the utmost in our perfessionalism. The Three Pillars of Craftsmanship are:</p>
+            <ol>
+              <li>We will strive for the upmost quality within ourselves, and with what we make for others.</li>
+              <li>We are committed to lifelong learning, and pushing our craft ever forward in a pragmatic way.</li>
+              <li>We are confident in being creative, and will not apologize for experimentation.</li>
+            </ol>
+          </div>
 
+          <div className="guild">
+            <h1>{this.state.members.length} Guild Members</h1>
+            <div className="members">
+              {this.state.members.map((member, index) => <Member key={index} name={member.name} />)}
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
