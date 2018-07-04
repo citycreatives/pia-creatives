@@ -14,8 +14,7 @@ class App extends Component {
         { name: "Brandon D'Adam" },
         { name: "Jared Rauh" },
         { name: "Parker Roth" },
-        { name: "Nicklaus Hernan" },
-        { name: "Steve Nichol" }
+        { name: "Nicklaus Hernan" }
       ]
     }
   }
