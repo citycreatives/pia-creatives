@@ -23,7 +23,7 @@ class Weather extends Component {
   render() {
     console.log(this.state);
     if (this.state.temperature && this.state.summary)
-      return <div style={{textAlign: 'right'}}>{Math.round(this.state.temperature)}°F and {this.state.summary.toLowerCase()} in Peoria, IL</div>;
+      return <div style={{textAlign: 'right'}}>{Math.round(this.state.temperature)}°F in Peoria, IL</div>;
     return null;
   }
 }
