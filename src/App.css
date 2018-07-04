@@ -40,8 +40,6 @@ section {
 .hero-illustration {
   flex: 1;
   align-self: center;
-  filter: grayscale();
-  opacity: 0.5;
   min-width: 480px;
 }
 

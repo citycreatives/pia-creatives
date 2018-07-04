@@ -44,7 +44,7 @@ class App extends Component {
 
         <section>
           <div className="craftsmanship">
-            <h1>We belive in Craftsmanship.</h1>
+            <h1>We belive in Craftsmanship</h1>
             <p>Craftsmanship is a personal commitment held by each guild member, striving for the utmost in our professionalism. The Three Pillars of Craftsmanship are:</p>
             <ol>
               <li>We will strive for the utmost quality within ourselves, and with what we make for others.</li>
